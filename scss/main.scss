@@ -11,6 +11,24 @@ body {
 }
 
 header{
+	padding-left: 0 !important; padding-right: 0 !important; 
+	a#back {
+		text-decoration: none;
+		color: #fff;
+		&:hover{color: #777;}
+		.fa {
+			font-size: 60px;
+			vertical-align: middle;
+		}
+		.letter{
+			font-size: 32.7px; 
+			font-weight: 400;
+			vertical-align: middle;
+			 }
+		position: absolute;
+		top: 10%;
+		left: 1%;
+	}
 	div#top-header {
 		@include xs-screens {
 			margin: 0 auto;
@@ -19,14 +37,14 @@ header{
 		margin-left: auto; 
 		margin-right: auto;
 		color: $deep_blue_violet;
-		padding-left: 0; padding-right: 0;
 		h1 {font-weight: 900;}
 		@include small-xs-screens {
-		 	margin-top: -10%;
+		 
 		}
 		div#follow-group {
 			border-bottom: 2px solid $deep_blue_violet;
-			padding-bottom: 40px;
+			padding-top: 25px;
+			padding-bottom: 45px;
 			a{
 				text-decoration: none;
 				color: $deep_blue_violet;
