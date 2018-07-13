@@ -15,6 +15,7 @@
 	@include xs-screens {
     color: #452e8d;
 	}
+
 }
 .navbar-default {
     @include xs-screens {
@@ -30,8 +31,14 @@
 				font-size: 88.9px;
 				margin-top: 0;
 				padding-top: 25px;
-				
+
 			}
+			@include xs-xs-screens {
+	    	font-size: 61px;
+	    }
+	    @include small-xs-screens {
+	    	font-size: 31px;
+	    }
 		}    
 }
 
@@ -68,7 +75,7 @@
 .navbar-toggle {
     position: relative;
     float: right;
-    padding: 50px 50px;
+    padding: 70px 10px;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -76,9 +83,12 @@
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
-    @include small-xs-screens {
-    	padding: 5px;
+    @include xs-xs-screens {
+    	padding: 60px 10px;
     }
+    @include xs-xs-screens {
+	    padding: 50px 10px;
+	  }
 }
 .navbar-collapse {
 	@include xs-screens {

@@ -9,6 +9,11 @@
         @content;
     }
 }
+@mixin xs-xs-screens{
+    @media only screen and(max-width: 650px) {
+        @content;
+    }
+}
 @mixin xs-screens{
     @media only screen and(max-width: 768px) {
         @content;

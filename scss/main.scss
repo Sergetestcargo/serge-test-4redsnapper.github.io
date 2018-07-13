@@ -61,11 +61,24 @@ header{
 				}
 			}
 		}
-		div#stats {
-			h5{
+		div.stats {
+			h5 {font-weight: 900;}
+			@include xs-screens {
+				h5{
 				font-size: 25px;
-				font-weight: bold;
+				}
 			}
+			@include xs-xs-screens {
+				h5{
+				font-size: 21px;
+				}
+			}
+			@include small-xs-screens {
+				h5{
+				font-size: 14px;
+				}
+			}
+			
 			text-align: center;
 			border-bottom: 2px solid $deep_blue_violet;
 			padding-top: 40px;

@@ -51,13 +51,21 @@ header {
         display: none; }
         header div#top-header div#follow-group div#follow-links .fa {
           font-size: 50px; }
-    header div#top-header div#stats {
+    header div#top-header div.stats {
       text-align: center;
       border-bottom: 2px solid #452e8d;
       padding-top: 40px;
       padding-bottom: 40px; }
-      header div#top-header div#stats h5 {
-        font-size: 25px;
-        font-weight: bold; }
+      header div#top-header div.stats h5 {
+        font-weight: 900; }
+      @media only screen and (max-width: 768px) {
+        header div#top-header div.stats h5 {
+          font-size: 25px; } }
+      @media only screen and (max-width: 650px) {
+        header div#top-header div.stats h5 {
+          font-size: 21px; } }
+      @media only screen and (max-width: 480px) {
+        header div#top-header div.stats h5 {
+          font-size: 14px; } }
 
 /*# sourceMappingURL=main.css.map */

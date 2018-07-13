@@ -27,6 +27,12 @@
       font-size: 88.9px;
       margin-top: 0;
       padding-top: 25px; } }
+  @media only screen and (max-width: 650px) {
+    .navbar-default h1 {
+      font-size: 61px; } }
+  @media only screen and (max-width: 480px) {
+    .navbar-default h1 {
+      font-size: 31px; } }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   color: #452e8d;
@@ -54,7 +60,7 @@
 .navbar-toggle {
   position: relative;
   float: right;
-  padding: 50px 50px;
+  padding: 70px 10px;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
@@ -62,9 +68,12 @@
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px; }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 650px) {
     .navbar-toggle {
-      padding: 5px; } }
+      padding: 60px 10px; } }
+  @media only screen and (max-width: 650px) {
+    .navbar-toggle {
+      padding: 50px 10px; } }
 
 @media only screen and (max-width: 768px) {
   .navbar-collapse h5 {
