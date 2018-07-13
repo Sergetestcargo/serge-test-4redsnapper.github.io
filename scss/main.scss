@@ -63,6 +63,10 @@ header{
 		}
 		div.stats {
 			h5 {font-weight: 900;}
+			text-align: center;
+			border-bottom: 2px solid $deep_blue_violet;
+			padding-top: 40px;
+			padding-bottom: 40px;
 			@include xs-screens {
 				h5{
 				font-size: 25px;
@@ -77,12 +81,7 @@ header{
 				h5{
 				font-size: 14px;
 				}
-			}
-			
-			text-align: center;
-			border-bottom: 2px solid $deep_blue_violet;
-			padding-top: 40px;
-			padding-bottom: 40px;
+			}			
 		}	 	
 	}
 }

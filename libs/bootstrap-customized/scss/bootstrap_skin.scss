@@ -47,17 +47,6 @@
     background-color: #fff;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: $deep_blue_violet;
-    font-size: 54.8px;
-}
-
-.navbar-nav>li>a {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    line-height: 30px;
-}
-
 .navbar-header{
 	@include xs-screens {
 		min-height: 100px;
@@ -90,6 +79,21 @@
 	    padding: 50px 10px;
 	  }
 }
+
+.navbar-default .navbar-nav>li>a {
+    color: $deep_blue_violet;
+    @include xs-screens {font-size: 54.8px;}
+    @include xs-xs-screens {font-size: 44px;}
+    @include small-xs-screens {font-size: 24px;}
+
+}
+
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
 .navbar-collapse {
 	@include xs-screens {
 		h5 {
@@ -99,6 +103,32 @@
 		.nav>li {
 			padding-top: 55px;
 			padding-bottom: 55px;
+	    border-bottom: 2px solid $deep_blue_violet;
+	    .fa{font-size: 50px;}
+
+		}
+	}
+	@include xs-xs-screens {
+		h5 {
+			font-size: 28.9px;
+			font-weight: 900;
+		}
+		.nav>li {
+			padding-top: 50px;
+			padding-bottom: 50px;
+	    border-bottom: 2px solid $deep_blue_violet;
+	    .fa{font-size: 50px;}
+
+		}
+	}
+	@include small-xs-screens {
+		h5 {
+			font-size: 28.9px;
+			font-weight: 900;
+		}
+		.nav>li {
+			padding-top: 40px;
+			padding-bottom: 40px;
 	    border-bottom: 2px solid $deep_blue_violet;
 	    .fa{font-size: 50px;}
 
