@@ -1,0 +1,57 @@
+@import "functions";/* file: _functions.scss, must be attached first*/
+@import "variables";
+@import "mixins";
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900');
+
+@include google-font("Source+Sans+Pro");
+
+body {
+	font-family: $header-text-font;
+}
+
+header{
+	div#top-header {
+		@include xs-screens {
+			margin: 0 auto;
+      max-width: 768px;
+		}
+		margin-left: auto; 
+		margin-right: auto;
+		color: $deep_blue_violet;
+		padding-left: 0; padding-right: 0;
+		h1 {font-weight: 900;}
+		@include small-xs-screens {
+		 	margin-top: -10%;
+		}
+		div#follow-group {
+			border-bottom: 2px solid $deep_blue_violet;
+			padding-bottom: 40px;
+			a{
+				text-decoration: none;
+				color: $deep_blue_violet;
+				font-size: 25px;
+				font-weight: bold;
+			}
+			i#minus{display: none;}
+			div#follow-links{
+				padding-top: 30px;
+				padding-left: 30px;
+				display: none;
+				.fa {
+					font-size: 50px;
+				}
+			}
+		}
+		div#stats {
+			h5{
+				font-size: 25px;
+				font-weight: bold;
+			}
+			text-align: center;
+			border-bottom: 2px solid $deep_blue_violet;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}	 	
+	}
+}

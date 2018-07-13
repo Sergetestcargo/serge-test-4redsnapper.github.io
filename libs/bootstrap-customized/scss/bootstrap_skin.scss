@@ -1,0 +1,96 @@
+@import "functions";/* file: _functions.scss, must be attached first*/
+@import "variables";
+@import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900');
+
+
+@include google-font("Source+Sans+Pro");
+
+.container-fluid {
+	@include xs-screens {
+		padding-left: 0; padding-right: 0;
+	}
+}
+.navbar-default .navbar-brand {
+	@include xs-screens {
+    color: #452e8d;
+	}
+}
+.navbar-default {
+    @include xs-screens {
+    	background-color: #fff;
+    	border-color: #fff;
+    	margin-top: -5%;
+			border-radius: (35px 35px 0 0);
+			padding-left: 46px; padding-right: 46px;
+    }
+    h1 {
+			margin-top: 0;
+			@include xs-screens {
+				font-size: 88.9px;
+				margin-top: 0;
+			}
+		}    
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: $deep_blue_violet;
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: $deep_blue_violet;
+    font-size: 54.8px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+.navbar-header{
+	@include xs-screens {
+		min-height: 100px;
+	}
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 50px 50px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    @include small-xs-screens {
+    	padding: 5px;
+    }
+}
+.navbar-collapse {
+	@include xs-screens {
+		h5 {
+			font-size: 28.9px;
+			font-weight: 900;
+		}
+		.nav>li {
+			padding-top: 55px;
+			padding-bottom: 55px;
+	    border-bottom: 2px solid $deep_blue_violet;
+	    .fa{font-size: 50px;}
+
+		}
+	}
+		
+}

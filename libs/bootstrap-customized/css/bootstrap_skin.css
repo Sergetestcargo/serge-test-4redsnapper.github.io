@@ -1,0 +1,79 @@
+/* file: _functions.scss, must be attached first*/
+/*====COLORS=======*/
+/*=====FONTS=======*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900");
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media only screen and (max-width: 768px) {
+  .navbar-default .navbar-brand {
+    color: #452e8d; } }
+
+@media only screen and (max-width: 768px) {
+  .navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+    margin-top: -5%;
+    border-radius: 35px 35px 0 0;
+    padding-left: 46px;
+    padding-right: 46px; } }
+.navbar-default h1 {
+  margin-top: 0; }
+  @media only screen and (max-width: 768px) {
+    .navbar-default h1 {
+      font-size: 88.9px;
+      margin-top: 0; } }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  color: #452e8d;
+  background-color: #fff; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #452e8d;
+  font-size: 54.8px; }
+
+.navbar-nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 30px; }
+
+@media only screen and (max-width: 768px) {
+  .navbar-header {
+    min-height: 100px; } }
+
+.navbar-default .navbar-toggle {
+  border: none; }
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #fff; }
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 50px 50px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  @media only screen and (max-width: 480px) {
+    .navbar-toggle {
+      padding: 5px; } }
+
+@media only screen and (max-width: 768px) {
+  .navbar-collapse h5 {
+    font-size: 28.9px;
+    font-weight: 900; }
+  .navbar-collapse .nav > li {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    border-bottom: 2px solid #452e8d; }
+    .navbar-collapse .nav > li .fa {
+      font-size: 50px; } }
+
+/*# sourceMappingURL=bootstrap_skin.css.map */
