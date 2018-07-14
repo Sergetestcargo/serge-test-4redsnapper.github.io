@@ -46,6 +46,26 @@
     color: $deep_blue_violet;
     background-color: #fff;
 }
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #777;
+    background-color: transparent;
+    font-size: 44px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &:hover{
+    	color: $deep_blue_violet;
+    }
+    @include xs-screens {
+				font-size: 44px;;
+			}
+			@include xs-xs-screens {
+	    	font-size: 31px;
+	    }
+	    @include small-xs-screens {
+	    	font-size: 20px;
+	    }
+
+}
 
 .navbar-header{
 	@include xs-screens {
@@ -76,7 +96,7 @@
     	padding: 60px 10px;
     }
     @include xs-xs-screens {
-	    padding: 50px 10px;
+	    padding: 50px 5px;
 	  }
 }
 
