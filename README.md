@@ -12,6 +12,7 @@ You can send back the completed test to me (at ...@redsnapper.net) in a .zip fil
 The deadline is the 16th of July 9:00 AM.
 
 # 1) main view at screen width 750px; ng-app for div#stats ng-model fixed variable obj for stats demo; jQuery slideDown/slideUp for div#follow-links , show/hide for plus/minus icons;
-# 2) reduce screen width from 750px down to 315px, make page responsiveness: scss media queries and bootstrap classes;
+# 1a) add some dropdowns submenu to menu main links(adjust the styles scss)
+# 2) reduce screen width from 750px down to 315px, make page responsiveness: pixelperfect, scss media queries and bootstrap classes;
 # 3) final tests
 # 4) what is with 750px+ sm, md, lg page screen views ? need larger template, or create one ?
