@@ -57,7 +57,9 @@ header{
 				padding-left: 30px;
 				display: none;
 				.fa {
+					color: $light-grey;
 					font-size: 50px;
+					&:hover{color: $deep_blue_violet;}
 				}
 			}
 		}
