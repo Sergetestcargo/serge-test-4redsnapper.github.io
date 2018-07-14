@@ -45,6 +45,8 @@ header {
         font-weight: bold; }
       header div#top-header div#follow-group i#minus {
         display: none; }
+      header div#top-header div#follow-group span#follow2 {
+        display: none; }
       header div#top-header div#follow-group div#follow-links {
         padding-top: 30px;
         padding-left: 30px;

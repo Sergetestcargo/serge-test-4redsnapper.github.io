@@ -1,12 +1,15 @@
 $(document).ready(function(){
-		$('i#plus').click(function () {
+	
+		$('i#plus, #follow1').click(function () {
 			$('div#follow-links').slideDown(600);
-			$(this).hide();
-			$('i#minus').show();
+			$('i#plus, #follow1').hide();
+			$('i#minus, #follow2').show();
 		})//end click 'plus'
-		$('i#minus').click(function () {
+		$('i#minus, #follow2').click(function () {
 			$('div#follow-links').slideUp(600);
-			$(this).hide();
-			$('i#plus').show();
+			$('i#minus, #follow2').hide();
+			$('i#plus, #follow1').show();
 		})//end click 'minus'
+
+
 });// end ready
